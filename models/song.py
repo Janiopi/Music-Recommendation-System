@@ -20,7 +20,7 @@ class Song():
         self.melancholy = melancholy
         self.acoustic = acoustic
         self.instrumental = instrumental
-        self.darknesss = darkness
+        self.darkness = darkness
     
     def getId(self):
         return self.id
@@ -56,7 +56,7 @@ class Song():
         return self.instrumental
     
     def getDarkness(self):
-        return self.darknesss
+        return self.darkness
     
 
 class SongRepository(ABC):
