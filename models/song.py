@@ -57,6 +57,10 @@ class Song():
     
     def getDarkness(self):
         return self.darkness
+
+    def getFeatureVector(self):
+        feature_vector = [self.vibe,self.energy,self.melancholy,self.acoustic,self.instrumental,self.darkness]
+        return feature_vector
     
 
 class SongRepository(ABC):
