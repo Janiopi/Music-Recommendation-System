@@ -27,7 +27,20 @@ class SQLiteSongRepository(SongRepository):
         cur.execute("SELECT * FROM songs WHERE song_id = :id",{"id": id})
         row = cur.fetchone()
         if row:
-            return Song(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11])
+            return Song(
+                id=row[0],
+                title=row[1],
+                artist=row[2],
+                genre=row[3],
+                album=row[4],
+                date=row[5],
+                vibe=float(row[6]),
+                energy=float(row[7]),
+                melancholy=float(row[8]),
+                acoustic=float(row[9]),
+                instrumental=float(row[10]),
+                darkness=float(row[11])
+            )
         return None
     
     def get_all(self) -> list[Song]:
@@ -37,7 +50,7 @@ class SQLiteSongRepository(SongRepository):
         if rows:
             songs = []
             for row in rows:
-                songs.append(Song(row[0],row[1],row[2],row[3],row[4],row[5],row[6],row[7],row[8],row[9],row[10],row[11]))
+                songs.append(Song(id=row[0],title=row[1],artist=row[2],genre=row[3],album=row[4],date=row[5],vibe=float(row[6]),energy=float(row[7]),melancholy=float(row[8]),acoustic=float(row[9]),instrumental=float(row[10]),darkness=float(row[11])))
             return songs
         return []
     
@@ -78,7 +91,7 @@ class SQLiteSongRepository(SongRepository):
             "artist": song.getArtist(),
             "genre": song.getGenre(),
             "album": song.getAlbum(),
-            "release_date": song.getReleaseDate(),
+            "release_date": song.getDate(),
             "vibe": song.getVibe(),
             "energy": song.getEnergy(),
             "melancholy": song.getMelancholy(),
