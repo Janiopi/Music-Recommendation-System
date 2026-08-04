@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "type": "delta",
+    "description": "Signed deltas for features in range [-1.0, 1.0]. Use combine_text to aggregate into a 0..1 vector.",
+    "features": ["vibe", "energy", "melancholy", "acoustic", "instrumental", "darkness"]
+  },
+
+  "alegre": {"vibe": 0.3, "energy": 0.2, "melancholy": -0.4, "darkness": -0.3, "lang": ["es"], "aliases": ["feliz","contento"]},
+  "happy":  {"vibe": 0.3, "energy": 0.25, "melancholy": -0.45, "darkness": -0.2, "lang": ["en"], "aliases": ["joyful","cheerful"]},
+
+  "triste": {"vibe": -0.2, "energy": -0.3, "melancholy": 0.5, "darkness": 0.2, "lang": ["es"], "aliases": ["deprimido"]},
+  "sad":    {"vibe": -0.25, "energy": -0.3, "melancholy": 0.55, "darkness": 0.2, "lang": ["en"], "aliases": ["sorrowful"]},
+
+  "lluvioso": {"vibe": -0.1, "energy": -0.2, "melancholy": 0.4, "acoustic": 0.2, "darkness": 0.2, "lang": ["es"], "aliases": ["lluvia"]},
+  "rainy":    {"vibe": -0.1, "energy": -0.2, "melancholy": 0.4, "acoustic": 0.2, "darkness": 0.15, "lang": ["en"], "aliases": []},
+
+  "fiesta": {"vibe": 0.5, "energy": 0.4, "melancholy": -0.5, "instrumental": -0.2, "lang": ["es"], "aliases": ["party"]},
+  "party":  {"vibe": 0.55, "energy": 0.5, "melancholy": -0.6, "instrumental": -0.25, "lang": ["en"], "aliases": ["rave"]},
+
+  "oscuro":   {"darkness": 0.5, "melancholy": 0.2, "vibe": -0.1, "lang": ["es"], "aliases": ["tenebroso"]},
+  "dark":     {"darkness": 0.45, "melancholy": 0.2, "vibe": -0.1, "lang": ["en"], "aliases": ["gloomy"]},
+
+  "cyberpunk": {"energy": 0.3, "darkness": 0.4, "acoustic": -0.5, "lang": ["es","en"], "aliases": []},
+
+  "estudiar": {"instrumental": 0.6, "energy": -0.2, "vibe": -0.2, "lang": ["es"], "aliases": ["estudio"]},
+  "study":    {"instrumental": 0.65, "energy": -0.25, "vibe": -0.2, "lang": ["en"], "aliases": ["studying"]},
+
+  "relajado": {"energy": -0.4, "vibe": -0.1, "acoustic": 0.3, "lang": ["es"], "aliases": ["tranquilo"]},
+  "relaxed":  {"energy": -0.45, "vibe": -0.1, "acoustic": 0.35, "lang": ["en"], "aliases": ["chill"]},
+
+  "energetic": {"vibe": 0.4, "energy": 0.6, "melancholy": -0.3, "acoustic": -0.2, "instrumental": 0.0, "darkness": -0.1, "lang": ["en"], "aliases": ["high-energy"]},
+  "energetico": {"vibe": 0.4, "energy": 0.6, "melancholy": -0.3, "acoustic": -0.2, "instrumental": 0.0, "darkness": -0.1, "lang": ["es"], "aliases": ["energetico"]},
+
+  "calm": {"vibe": 0.1, "energy": -0.5, "melancholy": 0.0, "acoustic": 0.3, "instrumental": 0.2, "darkness": 0.0, "lang": ["en"], "aliases": ["calmado"]},
+  "calmado": {"vibe": 0.1, "energy": -0.5, "melancholy": 0.0, "acoustic": 0.3, "instrumental": 0.2, "darkness": 0.0, "lang": ["es"], "aliases": ["tranquilo"]},
+
+  "romantico": {"vibe": 0.4, "energy": -0.1, "melancholy": 0.2, "acoustic": 0.3, "instrumental": 0.1, "darkness": 0.0, "lang": ["es"], "aliases": ["romantico"]},
+  "romantic":  {"vibe": 0.4, "energy": -0.1, "melancholy": 0.2, "acoustic": 0.3, "instrumental": 0.1, "darkness": 0.0, "lang": ["en"], "aliases": []},
+
+  "angry": {"vibe": -0.2, "energy": 0.6, "melancholy": 0.1, "acoustic": -0.4, "instrumental": -0.2, "darkness": 0.3, "lang": ["en"], "aliases": ["mad"]},
+  "enfadado": {"vibe": -0.2, "energy": 0.6, "melancholy": 0.1, "acoustic": -0.4, "instrumental": -0.2, "darkness": 0.3, "lang": ["es"], "aliases": ["enojado"]},
+
+  "nostalgic": {"vibe": -0.15, "energy": -0.2, "melancholy": 0.5, "acoustic": 0.2, "instrumental": 0.1, "darkness": 0.1, "lang": ["en"], "aliases": ["nostalgic"]},
+  "nostalgico": {"vibe": -0.15, "energy": -0.2, "melancholy": 0.5, "acoustic": 0.2, "instrumental": 0.1, "darkness": 0.1, "lang": ["es"], "aliases": []},
+
+  "sleepy": {"vibe": -0.1, "energy": -0.6, "melancholy": 0.1, "acoustic": 0.3, "instrumental": 0.2, "darkness": 0.0, "lang": ["en"], "aliases": ["drowsy"]},
+  "somnoliento": {"vibe": -0.1, "energy": -0.6, "melancholy": 0.1, "acoustic": 0.3, "instrumental": 0.2, "darkness": 0.0, "lang": ["es"], "aliases": ["dormir"]},
+
+  "workout": {"vibe": 0.3, "energy": 0.7, "melancholy": -0.4, "acoustic": -0.5, "instrumental": 0.1, "darkness": -0.1, "lang": ["en"], "aliases": ["gym"]},
+  "entrenamiento": {"vibe": 0.3, "energy": 0.7, "melancholy": -0.4, "acoustic": -0.5, "instrumental": 0.1, "darkness": -0.1, "lang": ["es"], "aliases": ["entrenar"]},
+
+  "focus": {"vibe": 0.0, "energy": -0.2, "melancholy": 0.0, "acoustic": 0.1, "instrumental": 0.6, "darkness": 0.0, "lang": ["en"], "aliases": ["concentracion","concentrate"]},
+
+  "ambient": {"vibe": 0.0, "energy": -0.3, "melancholy": 0.1, "acoustic": 0.4, "instrumental": 0.5, "darkness": 0.0, "lang": ["en","es"], "aliases": ["ambiente","ambiental"]},
+
+  "classical": {"vibe": 0.1, "energy": -0.2, "melancholy": 0.2, "acoustic": 0.4, "instrumental": 0.8, "darkness": 0.0, "lang": ["en"], "aliases": ["clasica"]},
+  "clasica": {"vibe": 0.1, "energy": -0.2, "melancholy": 0.2, "acoustic": 0.4, "instrumental": 0.8, "darkness": 0.0, "lang": ["es"], "aliases": []},
+
+  "jazz": {"vibe": 0.2, "energy": 0.0, "melancholy": 0.1, "acoustic": 0.3, "instrumental": 0.5, "darkness": 0.0, "lang": ["en","es"], "aliases": []},
+  "rock": {"vibe": 0.3, "energy": 0.5, "melancholy": 0.0, "acoustic": -0.1, "instrumental": 0.3, "darkness": 0.1, "lang": ["en","es"], "aliases": []},
+
+  "pop": {"vibe": 0.4, "energy": 0.3, "melancholy": -0.2, "acoustic": -0.2, "instrumental": -0.1, "darkness": -0.1, "lang": ["en","es"], "aliases": []},
+
+  "hiphop": {"vibe": 0.2, "energy": 0.45, "melancholy": -0.1, "acoustic": -0.3, "instrumental": 0.1, "darkness": 0.0, "lang": ["en","es"], "aliases": ["rap"]},
+
+  "electronic": {"vibe": 0.2, "energy": 0.5, "melancholy": -0.1, "acoustic": -0.6, "instrumental": 0.0, "darkness": 0.0, "lang": ["en","es"], "aliases": ["electronico","edm"]},
+
+  "acustico": {"acoustic": 0.7, "instrumental": 0.3, "energy": -0.2, "vibe": 0.1, "melancholy": 0.0, "darkness": 0.0, "lang": ["es"], "aliases": ["acoustic"]},
+
+  "instrumental": {"instrumental": 0.9, "acoustic": 0.2, "energy": -0.2, "vibe": -0.1, "melancholy": 0.0, "darkness": 0.0, "lang": ["en","es"], "aliases": []},
+
+  "meditation": {"vibe": 0.1, "energy": -0.6, "melancholy": 0.0, "acoustic": 0.4, "instrumental": 0.5, "darkness": 0.0, "lang": ["en"], "aliases": ["meditar","meditacion"]},
+
+  "chillout": {"energy": -0.3, "vibe": 0.2, "acoustic": 0.2, "instrumental": 0.2, "melancholy": -0.1, "darkness": 0.0, "lang": ["en"], "aliases": ["chill"]},
+
+  "upbeat": {"vibe": 0.45, "energy": 0.35, "melancholy": -0.4, "acoustic": -0.1, "instrumental": -0.1, "darkness": -0.2, "lang": ["en"], "aliases": []},
+
+  "mellow": {"vibe": 0.2, "energy": -0.2, "melancholy": 0.0, "acoustic": 0.3, "instrumental": 0.1, "darkness": 0.0, "lang": ["en"], "aliases": []}
+}
