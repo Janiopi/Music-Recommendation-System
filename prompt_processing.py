@@ -17,6 +17,9 @@ class PromptProcessing():
                 for dict_feat,dict_score in features.items():
                     if dict_feat in feature_vector:
                         feature_vector[dict_feat] += dict_score
-        return feature_vector
+        result = []
+        for value in feature_vector.values():
+            result.append(value)
+        return result
 
 

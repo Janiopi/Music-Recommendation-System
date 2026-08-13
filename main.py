@@ -56,9 +56,9 @@ if __name__ == "__main__":
         target_vector = p.get_feature_vector(tokens,dictionary_intentions)
         print(f"Target vector: {target_vector}")
         print("TIPO DEL TARGET VECTOR:", type(target_vector))
-        # Finding recommendations
 
-        recommender.recommend_song(target_vector)
-
+        # Finding recommendations  
+        recommendantions = recommender.recommend_song(target_vector,5)
+        print(recommendantions)
 
 

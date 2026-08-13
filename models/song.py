@@ -2,6 +2,10 @@ from abc import ABC, abstractmethod
 from typing import Optional
 
 class Song():
+    def __str__(self):
+        return f"{self.title}-{self.artist}"
+    def __repr__(self):
+        return f"{self.title}-{self.artist}"
     def __init__(self, title: str, artist: str, genre: str, album: str, date: str,
                  vibe: float, energy: float, melancholy: float, 
                  acoustic: float, instrumental: float, darkness: float, 
@@ -57,12 +61,8 @@ class Song():
     
     def getDarkness(self):
         return self.darkness
-
-    def getFeatureVector(self):
-        feature_vector = [self.vibe,self.energy,self.melancholy,self.acoustic,self.instrumental,self.darkness]
-        return feature_vector
-    
-    def getFeatureVector(self):
+  
+    def getFeatureVector(self) -> list[float]:
         feature_vector = [self.vibe,self.energy,self.melancholy,self.acoustic,self.instrumental,self.darkness]
         return feature_vector
 
